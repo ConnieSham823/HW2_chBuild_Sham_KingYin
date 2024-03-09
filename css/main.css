@@ -1,0 +1,179 @@
+.hidden {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(221, 175, 175);
+    color:antiquewhite;
+}
+
+header {
+    background-color:rgba(0, 0, 0, 0.20);
+    padding: 10px 0; /*top and bottom, left and right*/
+}
+
+#main-logo {
+    width: 600px;
+    display: block;
+    margin: 0 auto; /*margin top and bottom 0, margin left and right auto or equal*/
+    /* box-shadow: 2px 2px 5px rgba(0,0,0,.5); */
+}
+
+#character_nav {
+    background-color: hsl(0, 7%, 80%);
+    background-image: url(../images/HW-Background.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.characters {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.characters li {
+    height: 230px;
+    background-color: rgba(211, 50, 50, 0.721);
+    margin: 10px 8px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 160px 0 0 rgb(228, 203, 153) inset;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.characters li:hover {
+    box-shadow: 0 230px 0 0 #228b9d inset;
+}
+
+.characters li h3 {
+    color: white;
+    padding: 15px 8px;
+}
+
+.characters li a {
+    text-decoration: none;
+}
+
+.sprite {
+    width: 120px;
+    height: 150px;
+    background-image: url(../images/petSprites.png);
+}
+
+#corgi {
+    background-position: -120px 0;
+}
+
+#border {
+    background-position: -240px 0;
+}
+
+#beagle {
+    background-position: -360px 0;
+}
+
+#husky {
+    background-position: -480px 0;
+}
+
+#pug {
+    background-position: -600px 0;
+}
+
+#pomer:hover, #corgi:hover, #border:hover, #beagle:hover, #husky:hover, #pug:hover {
+    background-position-y: 150px;
+}
+
+#instructions {
+    padding: 30px;
+    text-align: center;
+
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+/* lightbox rules */
+
+.lightbox {
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top:30vh;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(45, 42, 45, 0.868);
+    background-image: url(../images/Pomer_pop.png);
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position: 40px bottom;
+    display: none;
+}
+
+.lightbox_close {
+    position: relative;
+    top: 30px;
+    left: 95%;
+}
+
+.lightbox_close:hover {
+    background-image: url('../images/CloseIcon_Hover.png')
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text {
+    line-height: 28px;
+}
+
+.lb_heading {
+    font-size: 34px;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+#lightbox2 {
+    background-image: url('../images/Corgi_pop.png');
+}
+
+#lightbox3 {
+    background-image: url('../images/Border_pop.png');
+}
+
+#lightbox4 {
+    background-image: url('../images/Border_pop.png');
+}
+
+#lightbox5 {
+    background-image: url('../images/Beagle_pop.png');
+}
+
+#lightbox6 {
+    background-image: url('../images/Pug_pop.png');
+}

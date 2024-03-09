@@ -2,10 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet">
+    <title>Pet Rescue</title>
 </head>
 <body>
+    <header>
+        <h1 class="hidden">Dog Adoption</h1>
+        <img src="images/pet_logo.png" id="main-logo" alt="Pet_Logo">
+    </header>
+
+    <main>
+        <nav id="character_nav">
+            <ul class="characters">
+                <li>
+                    <a href="#lightbox1">
+                        <div class="sprite" id="pomer"></div>
+                        <h3>Pomeranian</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox2">
+                        <div class="sprite" id="corgi"></div>
+                        <h3>Corgi</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox3">
+                        <div class="sprite" id="border"></div>
+                        <h3>Border Collie</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox4">
+                        <div class="sprite" id="beagle"></div>
+                        <h3>Beagle</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox5">
+                        <div class="sprite" id="husky"></div>
+                        <h3>Husky</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lightbox6">
+                        <div class="sprite" id="pug"></div>
+                        <h3>Pug</h3>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    <section id="instructions">
+        <h3>Choose your Pets!</h3>
+        <p>Use your mouse to hover / click to discover about each adorable pet.</p>
+        <hr>
+        <p>Make a difference in a furry friend's life choose adoption and 
+            give a deserving dog a second chance at happiness. 
+            <br>
+            Your decision to adopt 
+            not only transforms the life of a shelter dog but also adds 
+            immeasurable joy to your own.</p>
+            <img src="images/AdoptsMe.png">
+    </section>
+
+    </main>
+
+    <footer class="sticky-footer">
+        <h3>All Images &copy; PetRescue</h3>
+    </footer>
+
+    <section class="lightbox" id="lightbox1">
+        <a href="#" class="lightbox_close"><img src="images/closeIcon.png"></a>
+        <article>
+            <h3 class="lb_heading">Pomeranian</h3>
+            <p class="lb_text">
+                Sex: Female <br/>
+                Breed: Pomeranian <br/>
+                Color: Brown <br/>
+                Weight: 8.8kg <br/>
+                Animal ID: 86321
+            </p>
+            <hr>
+            <p class="lb_text">
+                <a href=“petrescue@petrescue.ca”>Send Email</a> <br/>
+                Phone: 226-9733129
+            </p>
+        </article>
+    </section>
+
+    <section class="lightbox" id="lightbox2">
+        <a href="#" class="lightbox_close"><img src="images/closeIcon.png"></a>
+        <article>
+            <h3 class="lb_heading">Corgi</h3>
+            <p class="lb_text">
+                Sex: Female <br/>
+                Breed: Corgi <br/>
+                Color: Brown and Black
+                Weight: 10.8kg
+                Animal ID: 86988
+            </p>
+            <p class="lb_text">
+                <a href=“petrescue@petrescue.ca”>Send Email</a> <br/>
+                Phone: 226-9733129
+            </p>
+        </article>
+    </section>
     
 </body>
 </html>
